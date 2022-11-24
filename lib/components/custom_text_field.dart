@@ -7,6 +7,7 @@ class CustomTextField extends StatelessWidget {
     this.controller,
     this.maxLines,
     this.onTap,
+    required String? Function(dynamic value) validator,
   }) : super(key: key);
 
   final String? hintText;

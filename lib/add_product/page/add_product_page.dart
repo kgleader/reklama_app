@@ -26,10 +26,12 @@ class AddProductPage extends StatelessWidget {
           CustomTextField(
             controller: _title,
             hintText: 'Title',
+            validator: (value) {},
           ),
           CustomTextField(
             controller: _descr,
             hintText: 'Description',
+            validator: (value) {},
           ),
           CustomTextField(
             controller: _date,
@@ -55,26 +57,32 @@ class AddProductPage extends StatelessWidget {
                 },
               );
             },
+            validator: (value) {},
           ),
           CustomTextField(
             controller: _phn,
             hintText: 'Phone number',
+            validator: (value) {},
           ),
           CustomTextField(
             controller: _userName,
             hintText: 'User name',
+            validator: (value) {},
           ),
           CustomTextField(
             controller: _address,
             hintText: 'Address',
+            validator: (value) {},
           ),
-          const CustomTextField(
+          CustomTextField(
+            controller: _price,
             hintText: 'Price',
+            validator: (value) {},
           ),
           ElevatedButton.icon(
             onPressed: () {},
             icon: const Icon(Icons.publish),
-            label: const Text('Add to Firestore'),
+            label: const Text('Add to FireStore'),
           ),
         ],
       ),
