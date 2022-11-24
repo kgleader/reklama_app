@@ -8,21 +8,31 @@ class CustomTextField extends StatelessWidget {
     this.maxLines,
     this.onTap,
     required String? Function(dynamic value) validator,
+    this.focusNode,
+    this.prefixIcon,
+    this.suffixIcon,
   }) : super(key: key);
 
   final String? hintText;
   final TextEditingController? controller;
   final int? maxLines;
   final void Function()? onTap;
+  final FocusNode? focusNode;
+  final Widget? prefixIcon;
+  final Widget? suffixIcon;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       controller: controller,
       maxLines: maxLines,
+      focusNode: focusNode,
       onTap: onTap,
       decoration: InputDecoration(
+        label: Text(hintText ?? ''),
         hintText: hintText,
+        prefixIcon: prefixIcon,
+        suffixIcon: suffixIcon,
         border: const OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(20)),
         ),
