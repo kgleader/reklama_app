@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../home/home_page/home_page.dart';
+import '../home/page/home_page.dart';
 
 export 'package:reklama_app/home/home.dart';
 
