@@ -57,22 +57,27 @@ class AddProductPage extends StatelessWidget {
               );
             },
           ),
+          const SizedBox(height: 12),
           CustomTextField(
             controller: _phn,
             hintText: 'Phone number',
           ),
+          const SizedBox(height: 12),
           CustomTextField(
             controller: _userName,
             hintText: 'User name',
           ),
+          const SizedBox(height: 12),
           CustomTextField(
             controller: _address,
             hintText: 'Address',
           ),
+          const SizedBox(height: 12),
           CustomTextField(
             controller: _price,
             hintText: 'Price',
           ),
+          const SizedBox(height: 12),
           ElevatedButton.icon(
             onPressed: () {},
             icon: const Icon(Icons.publish),
