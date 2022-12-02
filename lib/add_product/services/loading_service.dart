@@ -7,7 +7,7 @@ class LoadingService {
       context: context,
       builder: (conbtext) {
         return const CupertinoAlertDialog(
-          title: Text('Please waiting'),
+          title: Text('Жүктөлүп жатат'),
           content: Center(
             child: Padding(
               padding: EdgeInsets.symmetric(vertical: 40),

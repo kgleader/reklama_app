@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
               },
             );
           } else {
-            return const Center(child: Text('Some Error'));
+            return const Center(child: Text('Ката кетти'));
           }
         }),
       ),
