@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../home/page/home_page.dart';
 
-export 'package:reklama_app/home/home.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -14,6 +14,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        textTheme: GoogleFonts.emilysCandyTextTheme(),
+        scaffoldBackgroundColor: Colors.grey,
       ),
       home: const HomePage(),
     );
